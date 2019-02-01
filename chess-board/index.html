@@ -1,92 +1,24 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./style.css">
-        <title>Chess board</title>
-    </head>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Chess board</title>
+    <script>
+      function createTable() {
+        let table = document.createElement("table");
+        for (let i = 0; i < 8; i++) {
+          let row = table.appendChild(document.createElement("tr"));
+          for (let j = 0; j < 8; j++) {
+            row.appendChild(document.createElement("td"));
+          }
+        }
+        return table;
+      }
+      window.onload = function() {
+        document.querySelector(".grid").appendChild(createTable());
+      };
+    </script>
+  </head>
   <body>
-    <div class="grid">
-      <table>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </div>
+    <div class="grid"></div>
   </body>
 </html>
