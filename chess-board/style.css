@@ -1,0 +1,29 @@
+table {
+    border: solid black;
+    width: 800px;
+    height: 800px;
+    border-radius: 3px;
+    border-left: 10px solid #000;
+    border-bottom: 10px solid #000;
+    transform: perspective(800px) rotateX(70deg) rotateZ(-45deg) scale(0.8);
+    transform-style: preserve-3d;
+  }
+  
+  tr, td {
+    border: 1px solid black;
+  }
+  
+  tr:nth-child(2n) td:nth-child(2n+1) {
+    background: black;
+  }
+  
+  tr:nth-child(odd) td:nth-child(2n) {
+    background: black;
+  }
+  
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
